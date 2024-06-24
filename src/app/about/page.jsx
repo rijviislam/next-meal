@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 const getTime = async () => {
-  const res = await fetch("http://localhost:3000/time", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/time`, {
     next: { revalidate: 5 },
   });
   const data = await res.json();
