@@ -1,0 +1,5 @@
+.meal_grid {
+    display: grid;
+    grid-column: 2;
+    grid-gap: 10px;
+}
